@@ -1,0 +1,82 @@
+---
+layout: default
+title: "Contact Us"
+slug: contact
+permalink: /contact/
+description: "Contact Roggies' Flooring Center in Lowville, NY. Call 315-376-8166, request a free measure and estimate, or visit our showroom at 5809 Number 4 Road."
+---
+{% assign b = site.business %}
+<section class="page-hero">
+  <div class="wrap">
+    <p class="eyebrow">Contact us</p>
+    <h1>Let's talk about your floors.</h1>
+    <p class="lead">Request a free measure and estimate, ask a question, or just tell us what you're dreaming up.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap contact">
+    <form class="form" data-demo-form novalidate>
+      <div class="form__fields">
+        <div class="form__row">
+          <div class="field"><label for="f-name">Name</label><input id="f-name" name="name" autocomplete="name" required></div>
+          <div class="field"><label for="f-phone">Phone</label><input id="f-phone" name="phone" type="tel" autocomplete="tel"></div>
+        </div>
+        <div class="field"><label for="f-email">Email</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+        <fieldset class="field">
+          <legend>What are you shopping for?</legend>
+          <div class="chips">
+            {% assign interests = "Carpet,Luxury vinyl,Hardwood,Laminate,Tile,Sheet vinyl,Area rugs,Carpet binding,Commercial" | split: "," %}
+            {% for i in interests %}<label class="chip"><input type="checkbox" name="interest" value="{{ i }}"><span>{{ i }}</span></label>{% endfor %}
+          </div>
+        </fieldset>
+        <div class="form__row">
+          <div class="field">
+            <label for="f-type">Project type</label>
+            <select id="f-type" name="type"><option>Home</option><option>Business</option><option>Camp or rental</option></select>
+          </div>
+          <div class="field">
+            <label for="f-help">I'd like</label>
+            <select id="f-help" name="help"><option>A free measure &amp; estimate</option><option>Product advice</option><option>Just a question</option></select>
+          </div>
+        </div>
+        <div class="field"><label for="f-msg">Tell us about your project</label><textarea id="f-msg" name="message" placeholder="Rooms, rough square footage, timeline, anything else that helps."></textarea></div>
+        <button class="btn btn--dark" type="submit">Send message</button>
+        <p class="form__note">Prefer to talk? Call <a href="tel:{{ b.phone_href }}">{{ b.phone }}</a> during store hours.</p>
+      </div>
+      <div class="form__done" role="status">
+        <h2>Thanks! We'll be in touch.</h2>
+        <p class="muted">Someone from the store will reach out soon.</p>
+        <p class="form__note">Demo preview: this form isn't connected yet, so nothing was sent.</p>
+      </div>
+    </form>
+
+    <aside class="contact__aside">
+      <div>
+        <h2>Call</h2>
+        <a class="big-link" href="tel:{{ b.phone_href }}">{{ b.phone }}</a>
+      </div>
+      <div>
+        <h2>Email</h2>
+        <p><a href="mailto:{{ b.email }}">{{ b.email }}</a></p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <p>{{ b.street }}<br>{{ b.city }}, {{ b.state }} {{ b.zip }}</p>
+        <p class="mt-sm"><a href="{{ b.directions }}" target="_blank" rel="noopener">Get directions</a></p>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <dl class="hours">
+          {% for h in b.hours %}<div><dt>{{ h.days }}</dt><dd>{{ h.time }}</dd></div>{% endfor %}
+        </dl>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<section class="section--tight map-section">
+  <div class="wrap">
+    <iframe class="map map--tall" title="Map to Roggies' Flooring Center" src="{{ b.map_embed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>

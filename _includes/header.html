@@ -1,0 +1,25 @@
+<div class="topbar">
+  <div class="wrap topbar__inner">
+    <p class="topbar__status"><span class="status-dot" data-open-dot></span><span data-open-status>Mon–Fri 8–4 · Sat 8–12</span></p>
+    <p class="topbar__links">
+      <a href="{{ site.business.directions }}" target="_blank" rel="noopener">{{ site.business.street }}, {{ site.business.city }}</a>
+      <a href="tel:{{ site.business.phone_href }}">{{ site.business.phone }}</a>
+    </p>
+  </div>
+</div>
+<header class="header">
+  <div class="wrap header__inner">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="Roggies' Flooring Center home">{% include sign.html %}</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-btn>
+      <span class="menu-btn__bars" aria-hidden="true"></span><span class="sr-only">Menu</span>
+    </button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul>
+        {% for item in site.nav %}
+        <li><a href="{{ item.url | relative_url }}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+      <a class="btn btn--dark nav__cta" href="tel:{{ site.business.phone_href }}">Call {{ site.business.phone }}</a>
+    </nav>
+  </div>
+</header>

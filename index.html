@@ -1,0 +1,156 @@
+---
+layout: default
+slug: home
+description: "Family-owned flooring center in Lowville, NY. Carpet, luxury vinyl, hardwood, laminate, tile and area rugs, installed by our own crew. Free measurements and estimates."
+---
+{% assign b = site.business %}
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="eyebrow">Lowville, NY · Family owned since 2006</p>
+      <h1>Floors you can see, touch and trust before they go home.</h1>
+      <p class="lead">Roggies' is a full-service flooring center on the Number 4 Road. Walk a showroom full of carpet, luxury vinyl, hardwood, tile and rugs, then let our own crew handle the install.</p>
+      <div class="btn-row">
+        <a class="btn btn--dark" href="{{ '/contact/' | relative_url }}">Book a free measure</a>
+        <a class="btn btn--light" href="tel:{{ b.phone_href }}">Call {{ b.phone }}</a>
+      </div>
+      <ul class="trust">
+        <li>Free measurements &amp; estimates</li>
+        <li>In-house installation crew</li>
+        <li>Member of The Flooring Network</li>
+      </ul>
+    </div>
+    <div class="hero__media">
+      <div class="frame"><img src="{{ '/assets/img/showroom.jpg' | relative_url }}" alt="Inside the Roggies' showroom: carpet sample racks under tall windows" width="1066" height="800" fetchpriority="high"></div>
+      <figure class="hero__inset">
+        <img src="{{ '/assets/img/building.jpg' | relative_url }}" alt="The Roggies' Flooring Center building on Number 4 Road" width="333" height="145">
+        <figcaption>{{ b.street }}, {{ b.city }}</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow">What we carry</p>
+      <h2>Every kind of floor, under one roof.</h2>
+      <p class="lead">We keep a deep stock in our warehouse and can order from hundreds of styles through our suppliers. Bring a paint chip, a cabinet door or a photo and we'll pull samples while you wait.</p>
+    </div>
+    <div class="cards">
+      <a class="card" href="{{ '/flooring/' | relative_url }}#carpet">
+        <div class="card__img"><img src="{{ '/assets/img/showroom-carpet.jpg' | relative_url }}" alt="Wall of carpet samples in the showroom" loading="lazy" width="1066" height="800"></div>
+        <div class="card__body"><h3>Carpet</h3><p>Soft, warm and quiet for bedrooms and living rooms, plus remnants in stock for smaller spaces.</p></div>
+      </a>
+      <a class="card" href="{{ '/flooring/' | relative_url }}#luxury-vinyl">
+        <div class="card__img"><img src="{{ '/assets/img/renue-room.jpg' | relative_url }}" alt="Living room with wood-look luxury vinyl plank floor" loading="lazy" width="374" height="373"></div>
+        <div class="card__body"><h3>Luxury vinyl</h3><p>Waterproof plank and tile that shrugs off mud season, pets and kids.</p></div>
+      </a>
+      <a class="card" href="{{ '/flooring/' | relative_url }}#hardwood">
+        <div class="card__img"><img src="{{ '/assets/img/install-office.jpg' | relative_url }}" alt="Rustic plank floor installed in an office" loading="lazy" width="412" height="309"></div>
+        <div class="card__body"><h3>Hardwood &amp; laminate</h3><p>The warmth of real wood, or the look of it with a tougher, budget-friendly surface.</p></div>
+      </a>
+      <a class="card" href="{{ '/flooring/' | relative_url }}#tile">
+        <div class="card__img"><img src="{{ '/assets/img/showroom-hardwood-tile.jpg' | relative_url }}" alt="Tile and wood flooring display boards" loading="lazy" width="1066" height="800" style="object-position: 20% 50%"></div>
+        <div class="card__body"><h3>Ceramic &amp; porcelain tile</h3><p>Durable, easy-to-clean floors for kitchens, baths and entryways.</p></div>
+      </a>
+      <a class="card" href="{{ '/rugs-and-binding/' | relative_url }}">
+        <div class="card__img"><img src="{{ '/assets/img/rugs-rack.jpg' | relative_url }}" alt="Rack of area rugs on display" loading="lazy" width="600" height="800" style="object-position: 50% 30%"></div>
+        <div class="card__body"><h3>Area rugs &amp; runners</h3><p>Rugs in stock to take home today, hundreds more by catalog, and custom sizes cut and bound in-house.</p></div>
+      </a>
+      <a class="card" href="{{ '/flooring/' | relative_url }}#commercial">
+        <div class="card__img"><img src="{{ '/assets/img/commercial.jpg' | relative_url }}" alt="Commercial office lobby with colorful resilient flooring" loading="lazy" width="301" height="309"></div>
+        <div class="card__body"><h3>Commercial</h3><p>Commercial carpet and vinyl built for offices, schools and storefronts across the North Country.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--siding">
+  <div class="wrap">
+    <div class="section__head">
+      <p class="eyebrow">Why Roggies'</p>
+      <h2>Small enough to know you. Big enough to get you the latest.</h2>
+    </div>
+    <div class="features">
+      <div class="feature">
+        <span class="feature__num">01</span>
+        <h3>Hometown service</h3>
+        <p>You'll work with the same people from the first sample to the final walkthrough. No call centers, no runaround.</p>
+      </div>
+      <div class="feature">
+        <span class="feature__num">02</span>
+        <h3>Big-store buying power</h3>
+        <p>As members of The Flooring Network, the largest flooring buying group in the Northeast, we bring you current styles at real value.</p>
+      </div>
+      <div class="feature">
+        <span class="feature__num">03</span>
+        <h3>Our own installers</h3>
+        <p>Our crew installs everything we sell, for homes and businesses. The people who sold it to you stand behind it.</p>
+      </div>
+      <div class="feature">
+        <span class="feature__num">04</span>
+        <h3>Free measure &amp; estimate</h3>
+        <p>We'll come to you, measure the space and give you a clear price before you commit to anything.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--paper">
+  <div class="wrap split">
+    <div class="split__media split__media--frame">
+      <img src="{{ '/assets/img/renue-room.jpg' | relative_url }}" alt="ReNue hybrid flooring in a warm wood tone in a living room" loading="lazy" width="374" height="373">
+    </div>
+    <div>
+      <span class="badge">New in the showroom</span>
+      <h2>ReNue Hybrid: the comfort of LVP with the strength of laminate.</h2>
+      <p>A new kind of floor for busy households. Come see it in person and feel the difference underfoot.</p>
+      <ul class="ticks">
+        <li>Waterproof, ideal for kitchens, baths and mudrooms</li>
+        <li>Hardwood look and feel without the upkeep</li>
+        <li>Built for pets and active families</li>
+        <li>Made in the USA with recycled wood fiber</li>
+      </ul>
+      <a class="btn btn--dark" href="{{ '/flooring/' | relative_url }}#luxury-vinyl">See our vinyl &amp; hybrid floors</a>
+    </div>
+  </div>
+</section>
+
+<section class="section--tight section--dark">
+  <div class="wrap band">
+    <div>
+      <h2>Ask about this season's specials.</h2>
+      <p>We run sales throughout the year. Call the store or follow us on Facebook to catch the latest promotions and new arrivals.</p>
+    </div>
+    <div class="btn-row">
+      <a class="btn btn--white" href="{{ b.facebook }}" target="_blank" rel="noopener">Follow on Facebook</a>
+      <a class="btn btn--ghost" href="tel:{{ b.phone_href }}">Call {{ b.phone }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap visit">
+    <div class="visit__info">
+      <div>
+        <p class="eyebrow">Visit the showroom</p>
+        <h2>Come walk the floors.</h2>
+        <p>Our 4,500 sq. ft. building on the Number 4 Road has plenty of parking, a bright showroom and a warehouse full of stock.</p>
+        <p><strong>{{ b.street }}</strong><br>{{ b.city }}, {{ b.state }} {{ b.zip }}</p>
+      </div>
+      <dl class="hours">
+        {% for h in b.hours %}<div><dt>{{ h.days }}</dt><dd>{{ h.time }}</dd></div>{% endfor %}
+      </dl>
+      <div class="rating">
+        <span class="rating__score">100%</span>
+        <p><strong>of reviewers recommend us</strong><br><a href="{{ b.facebook }}/reviews" target="_blank" rel="noopener">Read our reviews on Facebook</a></p>
+      </div>
+      <div class="btn-row">
+        <a class="btn btn--dark" href="{{ b.directions }}" target="_blank" rel="noopener">Get directions</a>
+        <a class="btn btn--light" href="{{ '/contact/' | relative_url }}">Contact us</a>
+      </div>
+    </div>
+    <iframe class="map" title="Map to Roggies' Flooring Center" src="{{ b.map_embed }}" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>

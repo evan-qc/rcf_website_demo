@@ -1,0 +1,47 @@
+title: "Roggies' Flooring Center"
+tagline: "Full-service flooring in Lowville, NY"
+description: "Family-owned flooring center in Lowville, NY. Carpet, luxury vinyl, hardwood, laminate, tile and area rugs, installed by our own crew. Free measurements and estimates."
+url: "https://rfc.evanjennings.com"
+baseurl: ""
+
+# Demo preview: keeps search engines away from this copy of the site.
+# Set to false when the site goes live on roggiesflooring.com.
+demo: true
+
+business:
+  legal_name: "Roggies' Flooring Center, Inc."
+  phone: "315-376-8166"
+  phone_href: "+13153768166"
+  email: "rfc8166@yahoo.com"
+  street: "5809 Number 4 Road"
+  city: "Lowville"
+  state: "NY"
+  zip: "13367"
+  facebook: "https://www.facebook.com/RoggiesFlooringCenter"
+  directions: "https://www.google.com/maps/dir/?api=1&destination=Roggies+Flooring+Center,+5809+Number+4+Road,+Lowville,+NY+13367"
+  map_embed: "https://maps.google.com/maps?q=Roggies+Flooring+Center,+5809+Number+4+Road,+Lowville,+NY+13367&z=14&output=embed"
+  hours:
+    - days: "Monday – Friday"
+      time: "8am – 4pm"
+    - days: "Saturday"
+      time: "8am – 12pm"
+    - days: "Sunday"
+      time: "Closed"
+
+nav:
+  - title: "Flooring"
+    url: "/flooring/"
+  - title: "Rugs & Binding"
+    url: "/rugs-and-binding/"
+  - title: "Installation"
+    url: "/installation/"
+  - title: "About"
+    url: "/about/"
+  - title: "Contact"
+    url: "/contact/"
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
